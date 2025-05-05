@@ -35,20 +35,23 @@
     <div class="container">
       <h3 class="section-title">Our Collection</h3>
       <div class="cards">
-        <div class="card">
-          <img src="https://raw.githubusercontent.com/idovpn1321/web/main/3jmGyjb.webp" alt="Custom ROM" />
+        <div class="card animate-on-scroll">
+          <img src="https://raw.githubusercontent.com/idovpn1321/web/refs/heads/main/3jmGyjb.webp" alt="Custom ROM" />
           <h4>Custom ROM</h4>
           <p>Rasakan performa dan tampilan baru di HP kesayanganmu.</p>
+          <span class="price">Rp100.000</span>
         </div>
-        <div class="card">
-          <img src="https://raw.githubusercontent.com/idovpn1321/web/main/Custom-ROMs-1024x576.webp" alt="Root Access" />
+        <div class="card animate-on-scroll">
+          <img src="https://raw.githubusercontent.com/idovpn1321/web/refs/heads/main/Custom-ROMs-1024x576.webp" alt="Root Access" />
           <h4>Root Access</h4>
           <p>Akses penuh untuk tweak dan optimalisasi maksimal.</p>
+          <span class="price">Rp80.000</span>
         </div>
-        <div class="card">
-          <img src="https://raw.githubusercontent.com/idovpn1321/web/main/How-to-Unlock-Bootloader-Via-Fastboot-on-Android-1024x674.webp" alt="Unlock Bootloader" />
+        <div class="card animate-on-scroll">
+          <img src="https://raw.githubusercontent.com/idovpn1321/web/refs/heads/main/How-to-Unlock-Bootloader-Via-Fastboot-on-Android-1024x674.webp" alt="Unlock Bootloader" />
           <h4>Unlock Bootloader</h4>
           <p>Langkah awal untuk semua petualangan oprek-mu.</p>
+          <span class="price">Rp50.000</span>
         </div>
       </div>
     </div>
@@ -77,6 +80,20 @@
       </div>
     </div>
   </footer>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    const cards = document.querySelectorAll('.animate-on-scroll');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.3 });
+
+    cards.forEach(card => observer.observe(card));
+  </script>
 
 </body>
 </html>
