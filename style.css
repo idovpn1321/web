@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: #222;
+    background: linear-gradient(270deg, #f2f2f2, #d9f2ff, #f2f2f2);
+    background-size: 600% 600%;
+    animation: gradientFlow 15s ease infinite;
+  }
+  
+  @keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2.4em;
+    color: #0d47a1;
+    margin-bottom: 10px;
+  }
+  
+  .desc {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 25px;
+  }
+  
+  .service-list {
+    list-style: square;
+    padding-left: 20px;
+    line-height: 1.8em;
+    font-size: 1.05em;
+  }
+  
+  .note {
+    font-size: 0.9em;
+    margin-top: 20px;
+    color: #444;
+  }
+  
+  .cta {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 20px;
+    background-color: #0d47a1;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .cta:hover {
+    background-color: #1565c0;
+  }
+  
